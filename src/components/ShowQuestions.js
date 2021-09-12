@@ -1,4 +1,13 @@
 export default function ShowQuestions({ questions }) {
+  const [alert, setAlert] = useState({
+    msg: "",
+    type: true,
+  })
+
+  const handleCorrect = () => {
+    setAlert({ msg: "Correct Answer", type: true })
+  }
+
   return (
     <>
       <section>
